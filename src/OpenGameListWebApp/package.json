@@ -1,0 +1,45 @@
+{
+  "version": "1.0.0",
+  "name": "opengamelistwebapp",
+  "private": true,
+  "dependencies": {
+    "@angular/common": "~2.2.0",
+    "@angular/compiler": "~2.2.0",
+    "@angular/core": "~2.2.0",
+    "@angular/forms": "~2.2.0",
+    "@angular/http": "~2.2.0",
+    "@angular/platform-browser": "~2.2.0",
+    "@angular/platform-browser-dynamic": "~2.2.0",
+    "@angular/router": "~3.2.0",
+    "@angular/upgrade": "~2.2.0",
+    "@types/jquery": "^2.0.41",
+
+    "core-js": "^2.4.1",
+    "moment": "^2.14.1",
+    "ng2-bootstrap": "^1.6.3",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "systemjs": "0.19.39",
+    "zone.js": "^0.6.25"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "^3.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.13.6",
+    "gulp-uglify": "^2.0.0",
+    "typescript": "^1.8.10"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run gulp\" \"npm run watch\" \"npm run tsc:w\"",
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings",
+    "gulp": "gulp",
+    "watch": "gulp watch",
+    "ngc": "ngc"
+  }
+}
